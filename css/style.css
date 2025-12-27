@@ -413,10 +413,53 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
+#fh5co-event .iframe-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  overflow: hidden;
+}
+#fh5co-event .iframe-wrapper iframe {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
 @media screen and (max-width: 768px) {
   #fh5co-counter .event-wrap,
   #fh5co-event .event-wrap {
     margin-bottom: 10px;
+  }
+  #fh5co-event .display-t,
+  #fh5co-event .display-tc {
+    display: block !important;
+    width: 100%;
+  }
+  #fh5co-event .col-md-10 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #fh5co-event .iframe-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  #fh5co-event .iframe-wrapper iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-event .event-wrap {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+  }
+  #fh5co-event .col-md-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #fh5co-event .iframe-wrapper iframe {
+    height: 180px;
   }
 }
 #fh5co-counter .event-wrap h3,
